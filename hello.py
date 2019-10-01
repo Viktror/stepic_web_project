@@ -1,4 +1,4 @@
-def application(env, start_response):
+def app(env, start_response):
     print(env['QUERY_STRING'])
     data = env['QUERY_STRING'].split('&')
     data = '\n'.join(data)
